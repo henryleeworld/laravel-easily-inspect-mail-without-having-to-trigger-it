@@ -1,14 +1,14 @@
 @component('mail::message')
-# Thanks for using mailbook
+# {{ __('Thanks for using mailbook') }}
 
-Mailbook has been successfully installed.
+{{ __('Mailbook has been successfully installed.') }}
 
 @component('mail::button', ['url' => 'https://github.com/Xammie/mailbook#readme'])
-Documentation
+{{ __('Documentation') }}
 @endcomponent
 
-If you enjoy mailbook don't forget to [give it a ⭐️](https://github.com/Xammie/mailbook)
+{{ __('If you enjoy mailbook don\'t forget to [give it a ⭐️]') }}(https://github.com/Xammie/mailbook)
 
-Cheers,<br>
-Mailbook
+{{ __('Cheers,') }}<br>
+{{ __('Mailbook') }}
 @endcomponent
